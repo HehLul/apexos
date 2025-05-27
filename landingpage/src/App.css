@@ -3,5 +3,7 @@
   padding: 20px;
 }
 .app-container {
-  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
