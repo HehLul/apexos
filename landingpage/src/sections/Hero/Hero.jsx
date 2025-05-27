@@ -5,15 +5,16 @@ function Hero() {
     <div className="hero">
       <div className="text">
         <h3>ApexOS</h3>
-        <h1>
+        {/* <h1>
           The High Performer's OS
           <br />
           for Meticulous Self-Optimization
-        </h1>
+        </h1> */}
+        <h1>The OS For Meticulous Optimization</h1>
         <p>
-          Objectively unlock your potential: Seamlessly track every KPI for
-          every hour, instantly identify bottlenecks, and audit your life
-          systematically
+          ApexOS enables high performers to objectively unlock their potential:
+          Seamlessly track every KPI, instantly identify bottlenecks, and audit
+          your life systematically
         </p>
       </div>
 
