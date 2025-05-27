@@ -23,9 +23,12 @@
 .navbar > ul {
   display: flex;
   gap: 3rem;
+  font-weight: 500;
 }
 
-.navbar > button {
+.navbar a {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .navbar > .buttons {

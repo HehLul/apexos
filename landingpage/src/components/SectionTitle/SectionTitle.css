@@ -1,0 +1,17 @@
+.section-title {
+  display: inline-flex;
+  padding: 2px 16px;
+  border-radius: 8px;
+  border: 1px solid rgb(80, 80, 80);
+  background-color: white;
+
+  align-items: center;
+  gap: 0.5rem;
+}
+.section-title > p {
+  margin: 0;
+  color: rgb(80, 80, 80);
+}
+.section-title > img {
+  width: 20px;
+}

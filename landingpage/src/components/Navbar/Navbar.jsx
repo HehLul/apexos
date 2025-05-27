@@ -7,11 +7,11 @@ function Navbar() {
         <h3>ApexOS</h3>
       </div>
       <ul>
-        <a href="">Feature</a>
+        <a href="">Features</a>
         <a href="">Why ApexOS</a>
         <a href="">How it works</a>
         <a href="">Pricing</a>
-        <a href="">Home</a>
+        {/* <a href="">Home</a> */}
       </ul>
       {/* <button>Get ApexOS</button> */}
 
