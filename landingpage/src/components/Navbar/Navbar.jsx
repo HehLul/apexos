@@ -2,7 +2,10 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="img">Logo</div>
+      <div className="logo">
+        <img src="../apexos_logo2.png" alt="" />
+        <h3>ApexOS</h3>
+      </div>
       <ul>
         <a href="">Feature</a>
         <a href="">Why ApexOS</a>
@@ -10,7 +13,12 @@ function Navbar() {
         <a href="">Pricing</a>
         <a href="">Home</a>
       </ul>
-      <button>Get ApexOS</button>
+      {/* <button>Get ApexOS</button> */}
+
+      <div className="buttons">
+        <button>Sign In</button>
+        <button>Get Started</button>
+      </div>
     </div>
   );
 }

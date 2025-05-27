@@ -1,13 +1,39 @@
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 3rem;
+  padding: 1rem 3rem;
   background-color: white;
   border-radius: 20px;
+}
+
+.navbar > .logo > img {
+  max-width: 60px;
+}
+
+.navbar > .logo {
+  display: flex;
+  align-items: center;
+}
+.navbar > .logo > h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .navbar > ul {
   display: flex;
   gap: 3rem;
+}
+
+.navbar > button {
+}
+
+.navbar > .buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+.navbar > .buttons button:first-child {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
