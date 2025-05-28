@@ -11,6 +11,7 @@ function App() {
       <Hero></Hero>
       <Features></Features>
       <Why></Why>
+
       {/* <Footer></Footer> */}
     </div>
   );
