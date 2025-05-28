@@ -17,28 +17,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   margin: 3rem 0;
 }
 
 .timeline-step {
+  padding: 1rem 2rem;
   flex: 1;
-  max-width: 300px;
+  max-width: 350px;
   text-align: left;
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 20px;
 }
-
-.step-number {
-  background: gradient;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+.timeline-step > p {
+  color: rgb(80, 80, 80);
+  margin-top: 1rem;
+}
+.timeline-step > .title {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
+  gap: 8px;
+}
+.timeline-step > .title h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.timeline-step > .title img {
+  width: 46px;
+  height: 46px;
 }
 
-.timeline-arrow {
-  font-size: 2rem;
-  color: gray;
+.why > .rightarrow {
+  margin: 0;
+  padding: 0;
 }
