@@ -1,17 +1,55 @@
 import "./Features.css";
 
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
+import FeatureCard from "./FeatureCard/FeatureCard";
+
+//images and icons
+import charticon from "../../assets/charticon2.png";
+import timeicon from "../../assets/timeicon2.png";
+import notificon from "../../assets/notificon.png";
+import bolticon from "../../assets/bolticon.png";
+// import timeicon2 from "../../assets/timeicon2.png";
 
 function Features() {
   return (
     <div className="features">
       <div className="header">
         <SectionTitle icon={""} title={"Features"}></SectionTitle>
-        <h1>Everything you need</h1>
+        <h1>Your Competitive Advantage Starts Here</h1>
         <p>
-          ApexOS provides all the necessary features for meticulous data
-          tracking and regular audits
+          Get the systematic tracking tools you need to objectively identify
+          bottlenecks and optimize every hour of your day
         </p>
+      </div>
+      <div className="feature-cards">
+        <FeatureCard
+          icon={charticon}
+          title={"Visual Dashboard"}
+          desc={
+            "Our visual dashboard allows for seamless data analysis and bottleneck tracking. See exactly how every hour played out with beautiful charts."
+          }
+        ></FeatureCard>
+        <FeatureCard
+          icon={timeicon}
+          title={"Hour-by-Hour Tracking"}
+          desc={
+            "Track energy levels, productivity, focus time, and obstacles for every single hour. Get the granular data you need for systematic optimization."
+          }
+        ></FeatureCard>
+        <FeatureCard
+          icon={bolticon}
+          title={"Seamless Data Logging"}
+          desc={
+            "Effortlessly capture your metrics throughout the day with frictionless input methods. Maintain consistent tracking without disrupting your workflow."
+          }
+        ></FeatureCard>
+        <FeatureCard
+          icon={notificon}
+          title={"Smart Notifications"}
+          desc={
+            "Customizable, timely reminders keep you consistently tracking without being annoying. Build the systematic habit that unlocks your potential."
+          }
+        ></FeatureCard>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .features {
-  height: 130vh;
+  /* height: 130vh; */
   padding: 6rem 6rem;
   border-radius: 20px;
   background-color: white;
@@ -10,5 +10,17 @@
   font-weight: 600;
 }
 .features > .header p {
+  font-size: 1.1rem;
   color: rgb(80, 80, 80);
+}
+
+.features > .feature-cards {
+  margin-top: 6rem;
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: 1fr 1fr; /* stretch to container */
+  gap: 60px; /* remove gap between cards */
+
+  width: 100%; /* ensure full width */
 }
