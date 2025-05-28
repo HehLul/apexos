@@ -1,0 +1,44 @@
+.why {
+  padding: 1rem 3rem;
+  padding-top: 5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.why > h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.timeline-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.timeline-step {
+  flex: 1;
+  max-width: 300px;
+  text-align: left;
+}
+
+.step-number {
+  background: gradient;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.timeline-arrow {
+  font-size: 2rem;
+  color: gray;
+}
