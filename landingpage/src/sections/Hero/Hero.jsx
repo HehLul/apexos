@@ -29,7 +29,7 @@ function Hero() {
 
       <div className="buttons">
         <button>Get Started</button>
-        <button>How it Works</button>
+        <button>Learn More</button>
       </div>
     </div>
   );
