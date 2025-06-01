@@ -35,7 +35,7 @@ function How() {
           <div className="step">
             <div className="step-header">
               <img src={number2} alt="" />
-              <h2>Analyze Your Patterns</h2>
+              <h2>Analyze and Identify Bottlenecks</h2>
             </div>
 
             <p>

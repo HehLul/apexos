@@ -9,15 +9,28 @@
 
 .navbar > .logo > img {
   max-width: 60px;
+
+  /* Animation - fade in from bottom */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInFromBottom 0.6s ease-out forwards;
+  animation-delay: 0s;
 }
 
 .navbar > .logo {
   display: flex;
   align-items: center;
 }
+
 .navbar > .logo > h3 {
   font-size: 1.3rem;
   font-weight: 500;
+
+  /* Animation - slide in from left */
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideInFromLeft 0.6s ease-out forwards;
+  animation-delay: 0.3s;
 }
 
 .navbar > ul {
@@ -29,14 +42,76 @@
 .navbar a {
   font-size: 1rem;
   font-weight: 400;
+
+  /* Animation - slide in from left, staggered */
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.navbar a:nth-child(1) {
+  animation: slideInFromLeft 0.6s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.navbar a:nth-child(2) {
+  animation: slideInFromLeft 0.6s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+.navbar a:nth-child(3) {
+  animation: slideInFromLeft 0.6s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.navbar a:nth-child(4) {
+  animation: slideInFromLeft 0.6s ease-out forwards;
+  animation-delay: 1.2s;
 }
 
 .navbar > .buttons {
   display: flex;
   gap: 0.5rem;
 }
+
 .navbar > .buttons button:first-child {
   background-color: white;
   color: black;
   border: 1px solid black;
+
+  /* Animation - fade in from bottom */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInFromBottom 0.6s ease-out forwards;
+  animation-delay: 0.15s;
+}
+
+.navbar > .buttons button:last-child {
+  /* Animation - fade in from bottom */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInFromBottom 0.6s ease-out forwards;
+  animation-delay: 0s;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
