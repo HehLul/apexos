@@ -1,4 +1,4 @@
-// App.jsx - Updated with Intersection Observer
+// App.jsx - Separate observers for section header and individual rows
 import { useEffect } from "react";
 import "./global.css";
 import "./App.css";
@@ -10,28 +10,60 @@ import How from "./sections/How/How";
 
 function App() {
   useEffect(() => {
-    // Intersection Observer for scroll-triggered animations
-    const observerOptions = {
-      threshold: 0.2, // Trigger when 20% of element is visible
-      rootMargin: "0px 0px -50px 0px", // Trigger slightly before element fully enters viewport
+    // Observer for section headers (Why, Features, How sections)
+    const sectionObserverOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -50px 0px",
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    const sectionObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate-in");
         }
       });
-    }, observerOptions);
+    }, sectionObserverOptions);
 
-    // Observe all sections that should animate on scroll
+    // Observer specifically for feature card rows
+    const rowObserverOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -20px 0px",
+    };
+
+    const rowObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-in");
+        }
+      });
+    }, rowObserverOptions);
+
+    // Observe sections for header animations
     const sectionsToAnimate = document.querySelectorAll(
       ".why, .features, .how"
     );
-    sectionsToAnimate.forEach((section) => observer.observe(section));
+    sectionsToAnimate.forEach((section) => sectionObserver.observe(section));
 
-    // Cleanup observer on component unmount
-    return () => observer.disconnect();
+    // Wait for DOM to be ready, then observe feature rows
+    setTimeout(() => {
+      const featureRows = document.querySelectorAll(
+        ".feature-row-1, .feature-row-2"
+      );
+      featureRows.forEach((row) => {
+        // Create a wrapper div around each row's cards for observation
+        const cards = row.querySelectorAll(".feature-card");
+        if (cards.length > 0) {
+          // Use the row element itself for observation
+          rowObserver.observe(row);
+        }
+      });
+    }, 100);
+
+    // Cleanup observers on component unmount
+    return () => {
+      sectionObserver.disconnect();
+      rowObserver.disconnect();
+    };
   }, []);
 
   return (

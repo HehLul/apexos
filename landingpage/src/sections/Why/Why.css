@@ -17,7 +17,11 @@
   transform: translateY(40px);
 }
 
-/* Animation triggers when .animate-in class is added */
+/* SectionTitle - animate entire component at once */
+.why .section-title * {
+  opacity: 1 !important;
+  transform: none !important;
+}
 .why.animate-in .section-title {
   animation: fadeInFromTop 0.8s ease-out forwards;
   animation-delay: 0s;
