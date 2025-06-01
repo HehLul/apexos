@@ -4,11 +4,11 @@ function Navbar() {
     <div className="navbar">
       <div className="logo">
         <img src="../apexos_logo2.png" alt="" />
-        <h3>ApexOS</h3>
+        <h3>ApexxOS</h3>
       </div>
       <ul>
         <a href="">Features</a>
-        <a href="">Why ApexOS</a>
+        <a href="">Why apexxOS</a>
         <a href="">How it works</a>
         <a href="">Pricing</a>
         {/* <a href="">Home</a> */}

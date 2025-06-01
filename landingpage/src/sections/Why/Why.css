@@ -8,16 +8,32 @@
   font-size: 1.1rem;
 }
 
-.why > h1 {
+/* Initial hidden state - elements start invisible */
+.why .section-title,
+.why > h1,
+.why .timeline-step,
+.why .timeline-flow > img {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Animation triggers when .animate-in class is added */
+.why.animate-in .section-title {
+  animation: fadeInFromTop 0.8s ease-out forwards;
+  animation-delay: 0s;
+}
+
+.why.animate-in > h1 {
   font-size: 3rem;
   font-weight: 600;
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+  animation-delay: 0.3s;
 }
 
 .timeline-flow {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 1rem; */
   margin-top: 6rem;
 }
 
@@ -29,35 +45,85 @@
   border: 1px solid rgb(60, 60, 60);
   border-radius: 20px;
 }
+
+.why.animate-in .timeline-step:nth-child(1) {
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.why.animate-in .timeline-step:nth-child(3) {
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.why.animate-in .timeline-step:nth-child(5) {
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+  animation-delay: 1.4s;
+}
+
 .timeline-step > p {
   color: rgb(80, 80, 80);
   margin-top: 1rem;
 }
+
 .timeline-step > .title {
   display: flex;
   align-items: center;
   gap: 8px;
 }
+
 .timeline-step > .title h3 {
   font-size: 1.4rem;
   font-weight: 500;
 }
+
 .timeline-step > .title img {
   width: 46px;
   height: 46px;
 }
 
-.why > .rightarrow {
+.timeline-flow > img {
   margin: 0;
   padding: 0;
 }
 
-/* Highlight styles */
+.why.animate-in .timeline-flow > img:nth-child(2) {
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+  animation-delay: 0.8s;
+}
 
+.why.animate-in .timeline-flow > img:nth-child(4) {
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+/* Highlight styles */
 .timeline-step > p > span {
-  /* color: red; */
   font-weight: 600;
   font-size: 1.15rem;
   color: black;
   background: linear-gradient(to bottom, transparent 60%, #fce041 50%);
+}
+
+/* Keyframe Animations */
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
