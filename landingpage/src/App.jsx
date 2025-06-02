@@ -7,6 +7,7 @@ import Hero from "./sections/Hero/Hero";
 import Features from "./sections/Features/Features";
 import Why from "./sections/Why/Why";
 import How from "./sections/How/How";
+import Pricing from "./sections/Pricing/Pricing";
 
 function App() {
   useEffect(() => {
@@ -73,6 +74,7 @@ function App() {
       <Why></Why>
       <Features></Features>
       <How></How>
+      <Pricing></Pricing>
       {/* <Footer></Footer> */}
     </div>
   );

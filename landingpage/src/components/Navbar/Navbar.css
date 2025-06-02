@@ -49,23 +49,23 @@
 }
 
 .navbar a:nth-child(1) {
-  animation: slideInFromLeft 0.6s ease-out forwards;
-  animation-delay: 1.5s;
-}
-
-.navbar a:nth-child(2) {
-  animation: slideInFromLeft 0.6s ease-out forwards;
+  animation: fadeInStatic 0.6s ease-out forwards;
   animation-delay: 1.6s;
 }
 
-.navbar a:nth-child(3) {
-  animation: slideInFromLeft 0.6s ease-out forwards;
+.navbar a:nth-child(2) {
+  animation: fadeInStatic 0.6s ease-out forwards;
   animation-delay: 1.7s;
 }
 
-.navbar a:nth-child(4) {
-  animation: slideInFromLeft 0.6s ease-out forwards;
+.navbar a:nth-child(3) {
+  animation: fadeInStatic 0.6s ease-out forwards;
   animation-delay: 1.8s;
+}
+
+.navbar a:nth-child(4) {
+  animation: fadeInStatic 0.6s ease-out forwards;
+  animation-delay: 1.9s;
 }
 
 .navbar > .buttons {
@@ -84,14 +84,14 @@
     100px
   ); /* Start from right (Get Started button position) */
   animation: slideInFromRight 0.6s ease-out forwards;
-  animation-delay: 1.3s;
+  animation-delay: 1.6s;
 }
 
 .navbar > .buttons button:last-child {
   /* Animation - fade in from bottom (no change) */
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInFromBottom 0.3s ease-out forwards;
+  animation: fadeInFromBottom 0.6s ease-out forwards;
   animation-delay: 0s;
 }
 
@@ -126,5 +126,14 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes fadeInStatic {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
