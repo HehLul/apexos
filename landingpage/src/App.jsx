@@ -9,6 +9,7 @@ import Why from "./sections/Why/Why";
 import How from "./sections/How/How";
 import Pricing from "./sections/Pricing/Pricing";
 import LastCta from "./sections/LastCta/LastCta";
+import Footer from "./sections/Footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -77,7 +78,7 @@ function App() {
       <How></How>
       <Pricing></Pricing>
       <LastCta></LastCta>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }
