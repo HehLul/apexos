@@ -1,0 +1,96 @@
+.last-cta {
+  padding: 6rem;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+
+  /* Similar gradient background to the reference */
+  background: linear-gradient(
+    135deg,
+    rgba(20, 20, 20, 1) 25%,
+    rgba(40, 40, 40, 1) 45%,
+    rgba(50, 50, 50, 1) 75%,
+    rgba(60, 60, 60, 1) 100%
+  );
+}
+
+.last-cta .content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.last-cta h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.last-cta p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.last-cta .buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.last-cta button {
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.last-cta .primary {
+  background-color: white;
+  color: black;
+}
+
+.last-cta .primary:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.last-cta .secondary {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.last-cta .secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .last-cta {
+    padding: 4rem 2rem;
+  }
+
+  .last-cta h1 {
+    font-size: 2.5rem;
+  }
+
+  .last-cta .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .last-cta button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
