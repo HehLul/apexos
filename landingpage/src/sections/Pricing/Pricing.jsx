@@ -1,10 +1,20 @@
+import { useState } from "react";
 import "./Pricing.css";
-
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
-
 import { CircleCheckBig } from "lucide-react";
 
 function Pricing() {
+  const [selectedPlan, setSelectedPlan] = useState(null);
+
+  const handlePlanClick = (planIndex) => {
+    // If clicking the same plan, deselect it
+    if (selectedPlan === planIndex) {
+      setSelectedPlan(null);
+    } else {
+      setSelectedPlan(planIndex);
+    }
+  };
+
   return (
     <div className="pricing">
       <SectionTitle title={"Pricing"}></SectionTitle>
@@ -16,8 +26,13 @@ function Pricing() {
         </p>
       </div>
 
-      <div className="pricings">
-        <div className="container">
+      <div
+        className={`pricings ${selectedPlan !== null ? "has-selected" : ""}`}
+      >
+        <div
+          className={`container ${selectedPlan === 0 ? "selected" : ""}`}
+          onClick={() => handlePlanClick(0)}
+        >
           <h4>Waitlist</h4>
           <p>
             <span>$0</span> forever
@@ -47,7 +62,10 @@ function Pricing() {
           <button>Join Waitlist</button>
         </div>
 
-        <div className="container">
+        <div
+          className={`container ${selectedPlan === 1 ? "selected" : ""}`}
+          onClick={() => handlePlanClick(1)}
+        >
           <h4>Lifetime Access</h4>
           <p>
             <span>$29</span> one-time
@@ -78,10 +96,13 @@ function Pricing() {
               Lifetime updates and new features
             </li>
           </ul>
-          <button>Get Started</button>
+          <button>Secure Lifetime Access</button>
         </div>
 
-        <div className="container">
+        <div
+          className={`container ${selectedPlan === 2 ? "selected" : ""}`}
+          onClick={() => handlePlanClick(2)}
+        >
           <h4>Lifetime + Bonuses</h4>
           <p>
             <span>$67</span> one-time

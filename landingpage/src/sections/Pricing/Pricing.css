@@ -90,7 +90,38 @@
   border-radius: 20px;
   margin-top: auto;
   background-color: rgba(78, 78, 78, 0.507);
+  animation-delay: 1s;
 }
 .pricings > .container:nth-child(2) button {
   background-color: black;
+}
+.pricings > .container button:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.02);
+}
+
+/* Add these rules to your existing Pricing.css for scale animation */
+
+.pricings > .container {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(1);
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* When any container is selected, make all others smaller */
+.pricings.has-selected > .container {
+  transform: scale(0.95);
+  opacity: 0.7;
+}
+
+/* The selected container stays larger and full opacity */
+.pricings.has-selected > .container.selected {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Optional: Add hover effect for better UX */
+.pricings > .container:hover {
+  transform: scale(1.02);
 }
