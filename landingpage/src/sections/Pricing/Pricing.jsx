@@ -19,10 +19,11 @@ function Pricing() {
     <div className="pricing">
       <SectionTitle title={"Pricing"}></SectionTitle>
       <div className="header">
-        <h1>Invest in Your Competitive Advantage</h1>
+        <h1>Pre-Launch Pricing - Limited Time</h1>
         <p>
-          Choose the plan that fits your systematic optimization journey.
-          Limited-time pre-launch pricing available now.
+          Lock in these exclusive rates before launch. Prices increase to
+          $37/month after launch date. Choose your systematic optimization plan
+          now.
         </p>
       </div>
 
@@ -33,45 +34,12 @@ function Pricing() {
           className={`container ${selectedPlan === 0 ? "selected" : ""}`}
           onClick={() => handlePlanClick(0)}
         >
-          <h4>Waitlist</h4>
+          <h4>Standard Plan</h4>
           <p>
-            <span>$0</span> forever
+            <span>$39</span> first 3 months paid
             <br />
-            Stay updated on ApexOS development and get first access when we
-            launch
-          </p>
-          <ul>
-            <li className="plan-title">What you get:</li>
-            <li>
-              <CircleCheckBig size={24} />
-              Product development updates
-            </li>
-            <li>
-              <CircleCheckBig size={24} />
-              Early access notifications
-            </li>
-            <li>
-              <CircleCheckBig size={24} />
-              Performance optimization tips
-            </li>
-            <li>
-              <CircleCheckBig size={24} />
-              Launch day priority access
-            </li>
-          </ul>
-          <button>Join Waitlist</button>
-        </div>
-
-        <div
-          className={`container ${selectedPlan === 1 ? "selected" : ""}`}
-          onClick={() => handlePlanClick(1)}
-        >
-          <h4>Lifetime Access</h4>
-          <p>
-            <span>$29</span> one-time
-            <br />
-            Lock in lifetime access at the lowest price ever. Limited pre-launch
-            offer.
+            Get started with essential tracking. Locked-in rate: $27/month for
+            life after trial.
           </p>
           <ul>
             <li className="plan-title">Everything you need:</li>
@@ -93,32 +61,36 @@ function Pricing() {
             </li>
             <li>
               <CircleCheckBig size={24} />
-              Lifetime updates and new features
+              Manual data export
             </li>
           </ul>
-          <button>Secure Lifetime Access</button>
+          <button>Get Standard Access</button>
         </div>
 
         <div
-          className={`container ${selectedPlan === 2 ? "selected" : ""}`}
-          onClick={() => handlePlanClick(2)}
+          className={`container ${selectedPlan === 1 ? "selected" : ""}`}
+          onClick={() => handlePlanClick(1)}
         >
-          <h4>Lifetime + Bonuses</h4>
+          <h4>Premium Plan</h4>
           <p>
-            <span>$67</span> one-time
+            <span>$47</span> first 3 months paid
             <br />
-            Everything in Lifetime Access plus exclusive insider content and
-            optimization secrets
+            Full premium features included. Locked-in rate: $27/month for life
+            after trial.
           </p>
           <ul>
-            <li className="plan-title">Everything in Lifetime, plus:</li>
+            <li className="plan-title">Everything in Standard, plus:</li>
             <li>
               <CircleCheckBig size={24} />
-              Exclusive optimization playbook
+              AI-powered pattern recognition
             </li>
             <li>
               <CircleCheckBig size={24} />
-              Advanced performance frameworks
+              Advanced analytics & correlations
+            </li>
+            <li>
+              <CircleCheckBig size={24} />
+              Automated insights & suggestions
             </li>
             <li>
               <CircleCheckBig size={24} />
@@ -128,12 +100,45 @@ function Pricing() {
               <CircleCheckBig size={24} />
               Beta access to new features
             </li>
+          </ul>
+          <button>Get Premium Access</button>
+        </div>
+
+        <div
+          className={`container ${selectedPlan === 2 ? "selected" : ""}`}
+          onClick={() => handlePlanClick(2)}
+        >
+          <h4>Lifetime Access</h4>
+          <p>
+            <span>$167</span> one-time payment
+            <br />
+            Never pay again. Complete access to all features forever. Best
+            value.
+          </p>
+          <ul>
+            <li className="plan-title">Everything in Premium, plus:</li>
+            <li>
+              <CircleCheckBig size={24} />
+              Lifetime access to all features
+            </li>
+            <li>
+              <CircleCheckBig size={24} />
+              All future updates included
+            </li>
             <li>
               <CircleCheckBig size={24} />
               Private community access
             </li>
+            <li>
+              <CircleCheckBig size={24} />
+              VIP customer support
+            </li>
+            <li>
+              <CircleCheckBig size={24} />
+              First priority for new features
+            </li>
           </ul>
-          <button>Get Premium Access</button>
+          <button>Get Lifetime Access</button>
         </div>
       </div>
     </div>

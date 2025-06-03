@@ -4,12 +4,12 @@ function Hero() {
   return (
     <div className="hero">
       <div className="text">
-        <h3>ApexOS</h3>
+        <h3>ApexxOS</h3>
 
         <h1>The Operating System For High Performers</h1>
 
         <p>
-          Unlock your true potential: ApexOS enables you to sytematically audit
+          Unlock your true potential: ApexxOS enables you to sytematically audit
           your everyday life through meticulous KPI tracking and help instantly
           identify bottlenecks.
         </p>
