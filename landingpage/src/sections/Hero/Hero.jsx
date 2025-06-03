@@ -9,9 +9,9 @@ function Hero() {
         <h1>The Operating System For High Performers</h1>
 
         <p>
-          Unlock your true potential: ApexxOS enables you to sytematically audit
-          your everyday life through meticulous KPI tracking and help instantly
-          identify bottlenecks.
+          Stop leaving potential on the table: Meticulously track every hour,
+          instantly spot performance bottlenecks, systematically unlock your
+          hidden potential.
         </p>
       </div>
 

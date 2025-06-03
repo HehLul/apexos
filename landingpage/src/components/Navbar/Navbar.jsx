@@ -16,7 +16,7 @@ function Navbar() {
       {/* <button>Get ApexOS</button> */}
 
       <div className="buttons">
-        <button>Sign In</button>
+        <button>Join Waitlist</button>
         <button>Get Started</button>
       </div>
     </div>
