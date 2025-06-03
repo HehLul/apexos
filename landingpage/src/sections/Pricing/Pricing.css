@@ -14,25 +14,83 @@
   );
 }
 
+.pricing h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
 .pricing > .header {
+  margin-top: 4rem;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .pricings {
   display: flex;
-  /* justify-content: space-; */
-
   color: rgb(124, 124, 124);
-  gap: 3rem;
+  gap: 2rem;
 }
 .pricings > .container {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(122, 122, 122, 0.342);
+  color: rgb(143, 143, 143);
   border-radius: 20px;
   padding: 2rem;
-  max-width: 35vw;
+  width: 500px;
   min-height: 400px;
 }
 
 .pricings > .container:nth-child(2) {
   background-color: white;
+}
+.pricings > .container h4 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.pricings > .container span {
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+}
+.pricings > .container:nth-child(2) span {
+  color: black;
+}
+.pricings > .container p {
+  padding-bottom: 20px;
+  border-bottom: dashed 1px rgba(170, 169, 169, 0.5);
+}
+
+.pricings > .container ul {
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+.pricings > .container:nth-child(2) .plan-title {
+  color: black;
+}
+.pricings > .container ul .plan-title {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 12px;
+}
+.pricings > .container li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 2rem;
+}
+
+.pricings > .container button {
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: auto;
+  background-color: rgba(78, 78, 78, 0.507);
+}
+.pricings > .container:nth-child(2) button {
+  background-color: black;
 }

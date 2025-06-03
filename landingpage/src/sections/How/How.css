@@ -42,18 +42,18 @@
   animation-delay: 0.6s;
 }
 
-.container {
+.how > .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.header {
+.how > .header {
   margin-bottom: 4rem;
 }
 
 .steps {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 3rem;
   margin-top: 6rem;
 }
