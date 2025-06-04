@@ -77,7 +77,7 @@ function App() {
       <Hero></Hero>
       <How></How>
       <Problem></Problem>
-      <Solution></Solution>
+      {/* <Solution></Solution> */}
       {/* <Why></Why> */}
       <Features></Features>
       <Pricing></Pricing>

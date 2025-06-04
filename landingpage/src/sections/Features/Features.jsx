@@ -14,7 +14,7 @@ function Features() {
     <div className="features">
       <div className="header">
         <SectionTitle icon={""} title={"Features"}></SectionTitle>
-        <h1>Your Competitive Advantage Starts Here</h1>
+        <h1>Stop Guessing and Start Engineering</h1>
         <p>
           Get the systematic tracking tools you need to objectively identify
           bottlenecks and optimize every hour of your day

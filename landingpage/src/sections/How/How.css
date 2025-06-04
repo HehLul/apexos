@@ -4,7 +4,7 @@
   border-radius: 20px;
   background-color: white;
   color: black;
-  text-align: center;
+  /* text-align: center; */
   font-size: 1.1rem;
 }
 
@@ -24,45 +24,49 @@
 
 /* Animation triggers when .animate-in class is added to how section */
 .how.animate-in .section-title {
-  animation: fadeInFromTop 0.8s ease-out forwards;
+  animation: fadeInFromTopHow 0.8s ease-out forwards;
   animation-delay: 0s;
 }
 
 .how.animate-in .header h1 {
   font-size: 3rem;
   font-weight: 600;
-  animation: fadeInFromBottom 0.8s ease-out forwards;
+  /* margin-bottom: 1rem; */
+  animation: fadeInFromBottomHow 0.8s ease-out forwards;
   animation-delay: 0.3s;
 }
 
 .how.animate-in .header p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgb(80, 80, 80);
-  animation: fadeInFromBottom 0.8s ease-out forwards;
+  margin-bottom: 4rem;
+  animation: fadeInFromBottomHow 0.8s ease-out forwards;
   animation-delay: 0.6s;
 }
 
-.how > .container {
-  max-width: 1200px;
+.how .container {
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
-.how > .header {
+.how .header {
   margin-bottom: 4rem;
 }
 
 .steps {
-  display: flex;
-  /* flex-direction: column; */
-  gap: 3rem;
-  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  /* margin-top: 6rem; */
+  margin-top: 5rem;
 }
 
 .step {
-  text-align: left;
+  border: 1px solid rgb(80, 80, 80);
+  border-radius: 16px;
   padding: 2rem;
-  border: 1px solid rgb(60, 60, 60);
-  border-radius: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   /* Initial hidden state for steps */
   opacity: 0;
@@ -71,47 +75,96 @@
 
 /* Step animations - triggered when how section is visible */
 .how.animate-in .step:nth-child(1) {
-  animation: fadeInFromBottom 0.8s ease-out forwards;
+  animation: fadeInFromBottomHow 0.8s ease-out forwards;
   animation-delay: 0.9s;
 }
 
 .how.animate-in .step:nth-child(2) {
-  animation: fadeInFromBottom 0.8s ease-out forwards;
-  animation-delay: 1.1s;
+  animation: fadeInFromBottomHow 0.8s ease-out forwards;
+  animation-delay: 1s;
 }
 
 .how.animate-in .step:nth-child(3) {
-  animation: fadeInFromBottom 0.8s ease-out forwards;
-  animation-delay: 1.3s;
+  animation: fadeInFromBottomHow 0.8s ease-out forwards;
+  animation-delay: 1.1s;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .step-header {
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  /* justify-content: space-between; */
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .step-header img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  margin-bottom: 0.5rem;
+  /* height: 28px; */
 }
 
 .step-header h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
+  color: #000;
 }
 
 .step p {
   font-size: 1.1rem;
-  color: rgb(80, 80, 80);
+  color: #000000;
   line-height: 1.6;
   margin: 0;
 }
 
-/* Keyframe Animations */
-@keyframes fadeInFromTop {
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .how {
+    padding: 4rem 3rem;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .how {
+    padding: 3rem 2rem;
+  }
+
+  .how .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .how {
+    padding: 2rem 1rem;
+  }
+
+  .how .header h1 {
+    font-size: 2rem;
+  }
+
+  .step {
+    padding: 1.5rem;
+  }
+}
+
+/* Keyframe Animations - specific to How section */
+@keyframes fadeInFromTopHow {
   from {
     opacity: 0;
     transform: translateY(-30px);
@@ -122,7 +175,7 @@
   }
 }
 
-@keyframes fadeInFromBottom {
+@keyframes fadeInFromBottomHow {
   from {
     opacity: 0;
     transform: translateY(40px);

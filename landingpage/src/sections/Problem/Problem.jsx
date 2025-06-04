@@ -79,8 +79,8 @@ function Problem() {
         </p> */}
         <p>
           Your'e stuck not because you lack drive, but because you lack data.
-          <br /> What if there was a method to meticulously track all your data
-          and sytematically engineer your life?
+          <br /> What if there was an OS that meticulously tracked all your data
+          and sytematically engineered your life?
         </p>
       </div>
     </div>

@@ -3,9 +3,12 @@ import "./How.css";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 //icons
-import number1 from "../../assets/number-1.png";
-import number2 from "../../assets/number-2.png";
-import number3 from "../../assets/number-3.png";
+// import number1 from "../../assets/number-1.png";
+// import number2 from "../../assets/number-2.png";
+// import number3 from "../../assets/number-3.png";
+import number1 from "../../assets/dashboard.png";
+import number2 from "../../assets/magnifying.png";
+import number3 from "../../assets/gear.png";
 
 function How() {
   return (
@@ -13,47 +16,44 @@ function How() {
       <SectionTitle title={"How it Works"}></SectionTitle>
       <div className="container">
         <div className="header">
-          <h1>3 Step Process</h1>
+          <h1>The Performance Engineering Framework</h1>
           <p>
-            Transform from guessing what's wrong to engineering precise
-            performance improvements with our systematic approach
+            Stop optimizing blind. Engineer systematic performance improvements
+            through our precision data-driven approach.
           </p>
         </div>
         <div className="steps">
           <div className="step">
             <div className="step-header">
               <img src={number1} alt="" />
-              <h2>Meticulously Track Everything</h2>
+              <h2>Track Performance</h2>
             </div>
 
             <p>
-              Log energy levels, productivity, focus time, and obstacles for
-              every single hour via seamless input methods. Build the
-              comprehensive dataset you need for systematic optimization.
+              Log energy, productivity, focus, and obstacles for every hour
+              through frictionless input.
             </p>
           </div>
           <div className="step">
             <div className="step-header">
               <img src={number2} alt="" />
-              <h2>Analyze and Identify Bottlenecks</h2>
+              <h2>Identify Bottlenecks</h2>
             </div>
 
             <p>
-              Visual dashboards reveal exactly how every hour played out with
-              beautiful charts showing energy patterns, productivity trends, and
-              bottleneck correlations across all your metrics.
+              AI-powered dashboards instantly reveal patterns and the exact
+              bottlenecks destroying your potential.
             </p>
           </div>
           <div className="step">
             <div className="step-header">
               <img src={number3} alt="" />
-              <h2>Engineer Your Performance</h2>
+              <h2>Engineer Improvements</h2>
             </div>
 
             <p>
-              Create personalized audits and axioms based on your actual
-              performance data. Build systematic optimization protocols that
-              eliminate guesswork and unlock your hidden potential.
+              Create data-backed optimization protocols based on your actual
+              performance patterns.
             </p>
           </div>
         </div>

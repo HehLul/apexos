@@ -8,10 +8,12 @@ function Hero() {
 
         <h1>The Operating System For High Performers</h1>
 
+        {/* <p>Precision performance engineering your life: meticulously </p> */}
+
         <p>
-          Stop leaving potential on the table: Meticulously track every hour,
-          instantly spot performance bottlenecks, systematically unlock your
-          hidden potential.
+          Precision performance engineering your life through meticulous data
+          tracking, AI bottleneck identification, and strategic performance
+          audits.
         </p>
       </div>
 
