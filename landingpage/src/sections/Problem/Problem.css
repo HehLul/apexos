@@ -43,52 +43,75 @@
   animation: fadeInFromBottomProblem 0.8s ease-out forwards;
   animation-delay: 0.6s;
 }
-
 .problem-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   margin-bottom: 4rem;
 }
 
+/* Problem card rows - proper flex containers that can be observed */
+.problem-row-1,
+.problem-row-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
 .problem-card {
-  /* background-color: #f8f9fa; */
   border: 1px solid rgb(80, 80, 80);
   border-radius: 16px;
   padding: 2rem;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  /* Initial hidden state for cards */
+  /* Initial hidden state for ALL problem cards */
   opacity: 0;
-  transform: translateY(40px);
-}
-/* .problem-card:nth-child(2) .icon,
-.problem-card:nth-child(4) .icon {
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-} */
-
-/* Card animations - staggered for 4 cards */
-.problem.animate-in .problem-card:nth-child(1) {
-  animation: fadeInFromBottomProblem 0.8s ease-out forwards;
-  animation-delay: 0.9s;
 }
 
-.problem.animate-in .problem-card:nth-child(2) {
-  animation: fadeInFromBottomProblem 0.8s ease-out forwards;
-  animation-delay: 1s;
+/* Row 1 animations - triggered when row-1 gets animate-in class */
+.problem-row-1.animate-in .problem-card:nth-child(1) {
+  animation: fadeInFromLeftProblem 0.8s ease-out forwards;
+  animation-delay: 0s;
 }
 
-.problem.animate-in .problem-card:nth-child(3) {
-  animation: fadeInFromBottomProblem 0.8s ease-out forwards;
-  animation-delay: 1.1s;
+.problem-row-1.animate-in .problem-card:nth-child(2) {
+  animation: fadeInFromRightProblem 0.8s ease-out forwards;
+  animation-delay: 0s; /* Same delay = simultaneous */
 }
 
-.problem.animate-in .problem-card:nth-child(4) {
-  animation: fadeInFromBottomProblem 0.8s ease-out forwards;
-  animation-delay: 1.2s;
+/* Row 2 animations - triggered when row-2 gets animate-in class */
+.problem-row-2.animate-in .problem-card:nth-child(1) {
+  animation: fadeInFromLeftProblem 0.8s ease-out forwards;
+  animation-delay: 0s;
+}
+
+.problem-row-2.animate-in .problem-card:nth-child(2) {
+  animation: fadeInFromRightProblem 0.8s ease-out forwards;
+  animation-delay: 0s; /* Same delay = simultaneous */
+}
+
+/* Add these new keyframes to your existing animations */
+@keyframes fadeInFromLeftProblem {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromRightProblem {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .problem-card:hover {
