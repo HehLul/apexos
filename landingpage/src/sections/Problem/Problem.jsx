@@ -2,10 +2,10 @@ import "./Problem.css";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 //icons
-import downgraph from "../../assets/downgraph.png";
-import fireicon from "../../assets/fire_icon.png";
-import battery_icon from "../../assets/battery_icon.png";
-import thinking_icon from "../../assets/thinking_icon.png";
+import downgraph from "../../assets/book.png";
+import fireicon from "../../assets/think.png";
+import battery_icon from "../../assets/battery.png";
+import thinking_icon from "../../assets/loop.png";
 
 function Problem() {
   return (
@@ -13,17 +13,14 @@ function Problem() {
       <SectionTitle title={"Problem"}></SectionTitle>
       <div className="header">
         <h1>What's Really Holding You Back</h1>
-        {/* <p>The gap between who you are and who you know you could be</p> */}
+
         <p>The gap between your current self and unlocking your potential</p>
       </div>
 
       <div className="problem-cards">
         <div className="problem-card">
           <img className="icon" src={fireicon} alt="" />
-          {/* <p>
-            You know you're capable of more. You set high expectations. But
-            every day feels like you're not making any substantial progress.
-          </p> */}
+
           <p>
             You set high ambitions and create systems to reach your goals. But
             you regularly feel like you're not making any substantial progress.
@@ -54,14 +51,14 @@ function Problem() {
           </p>
           <div className="attribution">
             <div className="problem-type">The Wasted Potential</div>
-            <div className="persona">Business Professionals</div>
+            <div className="persona">High Achievers</div>
           </div>
         </div>
 
         <div className="problem-card">
           <img className="icon" src={thinking_icon} alt="" />
           <p>
-            Your'e contantly frusturated knowing you could have done more, been
+            You're contantly frustrated knowing you could have done more, been
             more, achieved more. That frusturation is eating at you.
           </p>
           <div className="attribution">
@@ -78,7 +75,7 @@ function Problem() {
           Start auditing. Optimize systematically.
         </p> */}
         <p>
-          Your'e stuck not because you lack drive, but because you lack data.
+          You're stuck not because you lack drive, but because you lack data.
           <br /> What if there was an OS that meticulously tracked all your data
           and sytematically engineered your life?
         </p>

@@ -31,7 +31,7 @@
 .problem.animate-in .header h1 {
   font-size: 3rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   animation: fadeInFromBottomProblem 0.8s ease-out forwards;
   animation-delay: 0.3s;
 }
@@ -63,6 +63,12 @@
   opacity: 0;
   transform: translateY(40px);
 }
+/* .problem-card:nth-child(2) .icon,
+.problem-card:nth-child(4) .icon {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+} */
 
 /* Card animations - staggered for 4 cards */
 .problem.animate-in .problem-card:nth-child(1) {
