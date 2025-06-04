@@ -12,6 +12,7 @@ import LastCta from "./sections/LastCta/LastCta";
 import Footer from "./sections/Footer/Footer";
 import Problem from "./sections/Problem/Problem";
 import Solution from "./sections/Solution/Solution";
+import Urgent from "./sections/Urgent/Urgent";
 
 function App() {
   useEffect(() => {
@@ -45,7 +46,7 @@ function App() {
 
     // Observe sections for header animations
     const sectionsToAnimate = document.querySelectorAll(
-      ".why, .features, .how, .pricing, .problem, .solution"
+      ".why, .features, .how, .pricing, .problem, .solution, .urgent"
     );
     sectionsToAnimate.forEach((section) => sectionObserver.observe(section));
 
@@ -81,7 +82,7 @@ function App() {
       {/* <Why></Why> */}
       <Features></Features>
       <Pricing></Pricing>
-
+      <Urgent></Urgent>
       <LastCta></LastCta>
       <Footer></Footer>
     </div>
