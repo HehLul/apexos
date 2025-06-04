@@ -94,7 +94,7 @@ body.mobile-menu-open {
   background-color: white;
   color: black;
   border: 1px solid black;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.75rem;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
@@ -113,7 +113,7 @@ body.mobile-menu-open {
   background-color: black;
   color: white;
   border: 1px solid black;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.75rem;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;

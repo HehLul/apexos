@@ -1,3 +1,4 @@
+/* Base Hero Styles */
 .hero {
   padding: 1rem 3rem;
   padding-top: 5rem;
@@ -16,7 +17,6 @@
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -24,16 +24,11 @@
   text-align: center;
   margin: 0 auto;
   max-width: 50vw;
-  /* font-weight: 300; */
 }
 
 .hero > .text h3 {
-  /* color: white; */
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  /* padding: 10px 50px;
-  background-color: rgba(20, 20, 20, 0.5); */
-  /* border-radius: 16px; */
   opacity: 0.8;
   font-weight: 400;
   text-decoration: underline;
@@ -118,6 +113,147 @@
 .hero > .buttons button:last-child:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 1rem 2rem;
+    padding-top: 4rem;
+    height: 75vh;
+  }
+
+  .hero > .text {
+    max-width: 60vw;
+  }
+
+  .hero > .text h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero > .text p {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem 1.5rem;
+    padding-top: 3rem;
+    height: 70vh;
+    border-radius: 15px;
+  }
+
+  .hero > .text {
+    max-width: 90vw;
+  }
+
+  .hero > .text h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero > .text h1 {
+    font-size: 2.5rem;
+    margin: 0.75rem 0;
+    line-height: 1.3;
+  }
+
+  .hero > .text p {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    line-height: 1.4;
+  }
+
+  .hero > .buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero > .buttons button {
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* Adjust mobile animations for stacked buttons */
+  .hero > .buttons button:last-child {
+    transform: translateY(30px);
+    animation: fadeInFromBottom 0.8s ease-out forwards;
+    animation-delay: 0.8s;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .hero {
+    padding: 1rem 2rem;
+    padding-top: 2.5rem;
+    height: 65vh;
+    border-radius: 12px;
+  }
+
+  .hero > .text {
+    max-width: 95vw;
+  }
+
+  .hero > .text h3 {
+    font-size: 0.85rem;
+  }
+
+  .hero > .text h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    line-height: 1.2;
+  }
+
+  .hero > .text p {
+    font-size: 0.9rem;
+    margin: 1.25rem 0;
+    line-height: 1.4;
+  }
+
+  .hero > .buttons {
+    margin-top: 6rem;
+    max-width: 280px;
+  }
+
+  .hero > .buttons button {
+    padding: 0.7rem 1.25rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 360px) {
+  .hero {
+    padding: 0.75rem;
+    padding-top: 2rem;
+    height: 60vh;
+  }
+
+  .hero > .text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero > .text p {
+    font-size: 0.85rem;
+    margin: 1rem 0;
+  }
+
+  .hero > .buttons {
+    max-width: 250px;
+  }
+
+  .hero > .buttons button {
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+  }
 }
 
 /* Keyframe Animations */

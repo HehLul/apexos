@@ -6,9 +6,46 @@ html {
   margin: 0 auto;
   padding: 20px;
 }
+
 .app-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   color: black;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  #root {
+    padding: 16px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  #root {
+    padding: 12px;
+  }
+
+  .app-container {
+    gap: 0.75rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  #root {
+    padding: 4px;
+  }
+
+  .app-container {
+    gap: 0.5rem;
+  }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 360px) {
+  #root {
+    padding: 6px;
+  }
 }
