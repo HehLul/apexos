@@ -77,8 +77,10 @@ function Problem() {
       <div className="closing-hook">
         <p>
           You're stuck not because you lack drive, but because you lack data.
-          <br /> What if there was an OS that meticulously tracked all your data
-          and systematically engineered your life?
+        </p>
+        <p>
+          What if there was an OS that meticulously tracked all your data and
+          systematically engineered your life?
         </p>
       </div>
     </div>
