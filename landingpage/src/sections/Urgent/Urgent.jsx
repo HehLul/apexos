@@ -2,7 +2,7 @@ import "./Urgent.css";
 import Countdown from "react-countdown";
 
 function Urgent() {
-  const launchDate = new Date("2025-07-30T12:00:00");
+  const launchDate = new Date("2025-07-15T12:00:00");
 
   // Custom renderer for countdown
   const countdownRenderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -35,11 +35,11 @@ function Urgent() {
   return (
     <div className="urgent">
       <div className="urgent-content">
-        <h1>Every Day Without Data Is Another Day of Wasted Potential</h1>
-        <p>
+        <h1>Business gets metrics. Performance gets guesswork?</h1>
+        {/* <p>
           While you guess what's wrong, high performers are engineering
           systematic improvements.
-        </p>
+        </p> */}
 
         <div className="countdown-section">
           <h3>Pre-Launch Pricing Ends In:</h3>
@@ -50,7 +50,7 @@ function Urgent() {
           <div className="rate">
             <span className="label">Current Rate:</span>
             <span className="price">$47 for 3 months</span>
-            <span className="detail">(then $27/month locked for life)</span>
+            <span className="detail">(then $17/month locked for life)</span>
           </div>
           <div className="rate post-launch">
             <span className="label">Post-Launch Rate:</span>
