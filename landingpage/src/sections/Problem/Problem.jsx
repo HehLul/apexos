@@ -10,10 +10,11 @@ import thinking_icon from "../../assets/thinking_icon.png";
 function Problem() {
   return (
     <div className="problem">
-      <SectionTitle title={"The Problem"}></SectionTitle>
+      <SectionTitle title={"Problem"}></SectionTitle>
       <div className="header">
-        <h1>Why Your Ambition Feels Like a Prison</h1>
-        <p>The gap between who you are and who you know you could be</p>
+        <h1>What's Really Holding You Back</h1>
+        {/* <p>The gap between who you are and who you know you could be</p> */}
+        <p>The gap between your current self and unlocking your potential</p>
       </div>
 
       <div className="problem-cards">
@@ -37,10 +38,10 @@ function Problem() {
           <img className="icon " src={downgraph} alt="" width={46} />
           <p>
             You've read the books, watched the videos, tried the systems. But
-            still haven't reached your goals.
+            still struggle with staying disciplined.
           </p>
           <div className="attribution">
-            <div className="problem-type">The Invisible Ceiling</div>
+            <div className="problem-type">The Consistency Crisis</div>
             <div className="persona">Self-Improvement Veterans</div>
           </div>
         </div>
@@ -48,11 +49,11 @@ function Problem() {
         <div className="problem-card">
           <img className="icon" src={battery_icon} alt="" />
           <p>
-            You know you have more in the tank. You feel it. But you can't
+            You know you have more left in the tank. You feel it. But you can't
             pinpoint exactly what's draining your potential every single day.
           </p>
           <div className="attribution">
-            <div className="problem-type">The Frustration Loop</div>
+            <div className="problem-type">The Wasted Potential</div>
             <div className="persona">Business Professionals</div>
           </div>
         </div>
@@ -64,17 +65,22 @@ function Problem() {
             more, achieved more. That frusturation is eating at you.
           </p>
           <div className="attribution">
-            <div className="problem-type">The Wasted Potential</div>
+            <div className="problem-type">The Frustration Loop</div>
             <div className="persona">Driven Indivisuals</div>
           </div>
         </div>
       </div>
 
       <div className="closing-hook">
+        {/* <p>
+          What if the solution isn't another productivity system, but
+          crystal-clear visibility into your daily patterns? Stop guessing.
+          Start auditing. Optimize systematically.
+        </p> */}
         <p>
-          What if the only thing standing between your current self and
-          unlocking success is clarity into what's <i>actually</i> happening
-          with your potential?
+          Your'e stuck not because you lack drive, but because you lack data.
+          <br /> What if there was a method to meticulously track all your data
+          and sytematically engineer your life?
         </p>
       </div>
     </div>

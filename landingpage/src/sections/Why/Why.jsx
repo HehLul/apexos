@@ -14,7 +14,7 @@ import questionicon from "../../assets/markicon.png";
 function Why() {
   return (
     <div className="why">
-      <SectionTitle title={"Why ApexOS"}></SectionTitle>
+      <SectionTitle title={"Our Vision"}></SectionTitle>
       <h1>What's Really Holding You Back</h1>
 
       <div className="timeline-flow">
