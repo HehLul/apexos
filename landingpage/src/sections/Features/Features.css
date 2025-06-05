@@ -1,5 +1,5 @@
+/* Base Features Section Styles */
 .features {
-  /* height: 130vh; */
   padding: 6rem 6rem;
   border-radius: 20px;
   background-color: white;
@@ -61,7 +61,7 @@
   opacity: 0;
 }
 
-/* Row 1 animations - triggered when row-1 gets animate-in class */
+/* Desktop Row Animations - Left/Right slide */
 .feature-row-1.animate-in .feature-card:nth-child(1) {
   animation: fadeInFromLeft 0.8s ease-out forwards;
   animation-delay: 0.1s;
@@ -69,10 +69,9 @@
 
 .feature-row-1.animate-in .feature-card:nth-child(2) {
   animation: fadeInFromRight 0.8s ease-out forwards;
-  animation-delay: 0.1s; /* Same delay = simultaneous */
+  animation-delay: 0.1s;
 }
 
-/* Row 2 animations - triggered when row-2 gets animate-in class */
 .feature-row-2.animate-in .feature-card:nth-child(1) {
   animation: fadeInFromLeft 0.8s ease-out forwards;
   animation-delay: 0.1s;
@@ -80,7 +79,144 @@
 
 .feature-row-2.animate-in .feature-card:nth-child(2) {
   animation: fadeInFromRight 0.8s ease-out forwards;
-  animation-delay: 0.1s; /* Same delay = simultaneous */
+  animation-delay: 0.1s;
+}
+
+/* Large Desktop */
+@media (max-width: 1200px) {
+  .features {
+    padding: 5rem 4rem;
+  }
+
+  .features.animate-in > .header h1 {
+    font-size: 2.8rem;
+  }
+
+  .features > .feature-cards {
+    margin-top: 5rem;
+    gap: 50px;
+  }
+
+  .feature-row-1,
+  .feature-row-2 {
+    gap: 50px;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .features {
+    padding: 4rem 3rem;
+  }
+
+  .features.animate-in > .header h1 {
+    font-size: 2.6rem;
+  }
+
+  .features.animate-in > .header p {
+    font-size: 1rem;
+  }
+
+  .features > .feature-cards {
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+
+  /* Switch to single column on tablet */
+  .feature-row-1,
+  .feature-row-2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Simplified animations for tablet - fade in from bottom */
+  .feature-row-1.animate-in .feature-card:nth-child(1),
+  .feature-row-1.animate-in .feature-card:nth-child(2),
+  .feature-row-2.animate-in .feature-card:nth-child(1),
+  .feature-row-2.animate-in .feature-card:nth-child(2) {
+    animation: fadeInFromBottom 0.8s ease-out forwards;
+    animation-delay: 0.1s;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .features {
+    padding: 3rem 2rem;
+    border-radius: 15px;
+  }
+
+  .features.animate-in > .header h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  .features.animate-in > .header p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .features > .feature-cards {
+    margin-top: 3rem;
+    gap: 1.5rem;
+  }
+
+  .feature-row-1,
+  .feature-row-2 {
+    gap: 1.5rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .features {
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+  }
+
+  .features.animate-in > .header h1 {
+    font-size: 1.8rem;
+    line-height: 1.25;
+  }
+
+  .features.animate-in > .header p {
+    font-size: 0.9rem;
+  }
+
+  .features > .feature-cards {
+    margin-top: 2.5rem;
+    gap: 1.25rem;
+  }
+
+  .feature-row-1,
+  .feature-row-2 {
+    gap: 1.25rem;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+  .features {
+    padding: 1.5rem 1rem;
+  }
+
+  .features.animate-in > .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .features.animate-in > .header p {
+    font-size: 0.85rem;
+  }
+
+  .features > .feature-cards {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .feature-row-1,
+  .feature-row-2 {
+    gap: 1rem;
+  }
 }
 
 /* Keyframe Animations */
