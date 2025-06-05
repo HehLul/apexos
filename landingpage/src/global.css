@@ -6,7 +6,7 @@
   /* Force light mode only for ApexxOS */
   color-scheme: light only;
   color: #213547;
-  background-color: rgb(243, 243, 243);
+  /* background-color: rgb(243, 243, 243); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

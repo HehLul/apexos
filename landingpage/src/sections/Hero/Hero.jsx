@@ -1,11 +1,11 @@
 import "./Hero.css";
 
+import mockup from "../../assets/dummy_mockup.png";
+
 function Hero() {
   return (
     <div className="hero">
       <div className="text">
-        <h3>ApexxOS</h3>
-
         <h1>The Operating System For High Performers</h1>
 
         {/* <p>Precision performance engineering your life: meticulously </p> */}
@@ -21,6 +21,7 @@ function Hero() {
         <button>Get Started</button>
         <button>Learn More</button>
       </div>
+      <img src={mockup} alt="" />
     </div>
   );
 }

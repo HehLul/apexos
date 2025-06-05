@@ -31,7 +31,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="../apexos_logo2.png" alt="ApexxOS Logo" />
+        <img src="../apexos_logo.png" alt="ApexxOS Logo" />
         <h3>ApexxOS</h3>
       </div>
 
@@ -40,6 +40,7 @@ function Navbar() {
         <a href="#vision">Vision</a>
         <a href="#product">Product</a>
         <a href="#pricing">Pricing</a>
+
         <a href="#portal">aOS Portal</a>
       </ul>
 

@@ -76,14 +76,11 @@ function App() {
     <div className="app-container">
       <Navbar></Navbar>
       <Hero></Hero>
-      <How></How>
-      <Problem></Problem>
-      {/* <Solution></Solution> */}
-      {/* <Why></Why> */}
+      {/* <How></How> */}
+      {/* <Problem></Problem>
       <Features></Features>
       <Pricing></Pricing>
-      <Urgent></Urgent>
-      {/* <LastCta></LastCta> */}
+      <Urgent></Urgent> */}
       <Footer></Footer>
     </div>
   );
