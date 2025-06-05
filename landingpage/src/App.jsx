@@ -1,7 +1,8 @@
 // App.jsx - Separate observers for section header and individual rows
 import { useEffect } from "react";
-import "./global.css";
 import "./App.css";
+
+//components
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./sections/Hero/Hero";
 import Features from "./sections/Features/Features";
@@ -14,6 +15,7 @@ import Problem from "./sections/Problem/Problem";
 import Solution from "./sections/Solution/Solution";
 import Urgent from "./sections/Urgent/Urgent";
 
+//main function
 function App() {
   useEffect(() => {
     // Observer for section headers (Why, Features, How sections)
@@ -76,7 +78,7 @@ function App() {
     <div className="app-container">
       <Navbar></Navbar>
       <Hero></Hero>
-      {/* <How></How> */}
+      <How></How>
       {/* <Problem></Problem>
       <Features></Features>
       <Pricing></Pricing>

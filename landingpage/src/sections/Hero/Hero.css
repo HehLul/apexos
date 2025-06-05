@@ -2,20 +2,8 @@
 .hero {
   padding: 1rem 3rem;
   padding-top: 5rem;
-  /* border-radius: 20px; */
   color: white;
-  /* height: 80vh; */
   height: fit-content;
-
-  /* Radial gradient background for illumination effect - lightbulb from ceiling */
-  /* background: radial-gradient(
-    ellipse at center top,
-    rgba(50, 50, 50, 1) 0%,
-    rgba(30, 30, 30, 1) 20%,
-    rgba(20, 20, 20, 1) 40%,
-    rgba(0, 0, 0, 1) 100%
-  ); */
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,39 +20,19 @@
   max-width: 50vw;
 }
 
-.hero > .text h3 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  opacity: 0.8;
-  font-weight: 400;
-  text-decoration: underline;
-  display: inline-block;
-
-  /* Animation */
-  animation: fadeInFromTop 0.8s ease-out forwards;
-  animation-delay: 0s;
-}
-
 .hero > .text h1 {
-  font-size: 3.7rem;
-  font-weight: 500;
   margin: 1rem 0;
-  line-height: 1.4;
-
   /* Animation */
-  opacity: 0;
   transform: translateY(30px);
   animation: fadeInFromBottom 0.8s ease-out forwards;
   animation-delay: 0.3s;
 }
 
 .hero > .text p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   opacity: 0.9;
   font-weight: 300;
   margin: 2rem 0;
-  line-height: 1.5;
-
   /* Animation */
   opacity: 0;
   transform: translateY(30px);
