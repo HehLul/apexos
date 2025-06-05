@@ -3,9 +3,10 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Force light mode only for ApexxOS */
+  color-scheme: light only;
+  color: #213547;
+  background-color: rgb(243, 243, 243);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,22 +14,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Force light mode for all elements */
+* {
+  color-scheme: light only;
+}
+
 a {
   font-weight: 400;
   color: #000000;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #6b6b6b;
 }
-
-/* body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-} */
 
 h1 {
   font-size: 3.2em;
@@ -53,15 +52,29 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+/* Override dark mode preferences completely */
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #213547;
-    background-color: rgb(243, 243, 243);
+    color-scheme: light only !important;
+    color: #213547 !important;
+    background-color: rgb(243, 243, 243) !important;
   }
+
+  * {
+    color-scheme: light only !important;
+  }
+
+  body {
+    background-color: rgb(243, 243, 243) !important;
+    color: #213547 !important;
+  }
+
   a:hover {
-    color: #6b6b6b;
+    color: #6b6b6b !important;
   }
+
   button {
-    background-color: black;
+    background-color: black !important;
+    color: white !important;
   }
 }
