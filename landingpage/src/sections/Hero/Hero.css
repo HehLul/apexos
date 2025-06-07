@@ -22,10 +22,6 @@
 
 .hero > .text h1 {
   margin: 1rem 0;
-  /* Animation */
-  transform: translateY(30px);
-  animation: fadeInFromBottom 0.8s ease-out forwards;
-  animation-delay: 0.3s;
 }
 
 .hero > .text p {
@@ -33,11 +29,6 @@
   opacity: 0.9;
   font-weight: 300;
   margin: 2rem 0;
-  /* Animation */
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInFromBottom 0.8s ease-out forwards;
-  animation-delay: 0.6s;
 }
 
 .hero > .buttons {
@@ -59,12 +50,6 @@
   background-color: white;
   color: black;
   border: none;
-
-  /* Animation */
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInFromBottom 0.8s ease-out forwards;
-  animation-delay: 0s;
 }
 
 .hero > .buttons button:first-child:hover {
@@ -76,12 +61,6 @@
   background-color: transparent;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
-
-  /* Animation - starts underneath first button */
-  opacity: 0;
-  transform: translateX(-100px) translateY(0px);
-  animation: slideInFromFirst 0.8s ease-out forwards;
-  animation-delay: 0.8s;
 }
 
 .hero > .buttons button:last-child:hover {
@@ -154,13 +133,6 @@
     width: 100%;
     font-size: 1rem;
   }
-
-  /* Adjust mobile animations for stacked buttons */
-  .hero > .buttons button:last-child {
-    transform: translateY(30px);
-    animation: fadeInFromBottom 0.8s ease-out forwards;
-    animation-delay: 0.8s;
-  }
 }
 
 /* Small Mobile Styles */
@@ -227,39 +199,5 @@
   .hero > .buttons button {
     padding: 0.65rem 1rem;
     font-size: 0.9rem;
-  }
-}
-
-/* Keyframe Animations */
-@keyframes fadeInFromTop {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 0.8;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInFromBottom {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 0.9;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInFromFirst {
-  from {
-    opacity: 0;
-    transform: translateX(-100px) translateY(0px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0) translateY(0);
   }
 }

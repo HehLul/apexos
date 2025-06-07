@@ -14,6 +14,7 @@ import Footer from "./sections/Footer/Footer";
 import Problem from "./sections/Problem/Problem";
 import Solution from "./sections/Solution/Solution";
 import Urgent from "./sections/Urgent/Urgent";
+import New from "./sections/New/New";
 
 //main function
 function App() {
@@ -79,6 +80,7 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <How></How>
+      <New></New>
       {/* <Problem></Problem>
       <Features></Features>
       <Pricing></Pricing>
