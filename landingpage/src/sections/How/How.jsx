@@ -26,7 +26,7 @@ function How() {
           <div className="step">
             <div className="step-header">
               <img src={number1} alt="" />
-              <h2>Track Performance</h2>
+              <h3>Track Performance</h3>
             </div>
 
             <p>

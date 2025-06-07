@@ -27,6 +27,19 @@ h2 {
   font-weight: 300;
   color: white;
 }
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+
+p {
+  font-size: 1.1rem;
+  color: rgb(180, 180, 180);
+  line-height: 1.6;
+  margin: 0;
+}
 
 .buttons {
   gap: 1rem;
@@ -45,6 +58,12 @@ button {
   padding: 3rem 8rem;
   background-color: #000000;
   color: white;
+}
+.text-container {
+  border: 2px solid rgb(225, 225, 225, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: left;
 }
 
 a {

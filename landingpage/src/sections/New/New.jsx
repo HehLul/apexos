@@ -9,6 +9,14 @@ function New() {
         <a href="">Learn more</a> optio similique dolorum vitae blanditiis
         ratione? Libero similique culpa ullam aperiam.
       </h2>
+      <div className="text-container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum
+          tempore fugit iure, esse, natus neque totam necessitatibus quibusdam
+          sint commodi magni ea accusantium. Beatae minima magni quibusdam
+          sapiente. Voluptatem.
+        </p>
+      </div>
 
       <a href=""></a>
     </div>
