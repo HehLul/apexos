@@ -48,11 +48,11 @@ button {
 }
 
 a {
-  font-weight: 400;
-  color: #000000;
-  text-decoration: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(180, 180, 180);
+  text-decoration: none;
 }
-
 a:hover {
   color: #6b6b6b;
 }

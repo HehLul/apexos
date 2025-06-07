@@ -1,7 +1,7 @@
 /* Base Navbar Styles */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0.5em 3rem;
   position: relative;
@@ -44,13 +44,13 @@ body.mobile-menu-open {
   padding: 0;
 }
 
-.desktop-nav a {
+/* .desktop-nav a {
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
   color: inherit;
   transition: color 0.2s ease;
-}
+} */
 
 .desktop-nav a:hover {
   color: #666;
