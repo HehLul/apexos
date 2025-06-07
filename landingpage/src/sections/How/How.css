@@ -1,21 +1,19 @@
 /* Base How Section Styles */
-.how {
-  padding: 8rem;
+/* .how {
+  padding: 3rem 8rem;
   padding-top: 3rem;
-
-  /* background-color: white; */
   background-color: #000;
   color: white;
   font-size: 1.1rem;
-}
+} */
 
 /* Initial hidden state - header elements start invisible */
-.how .section-title,
+/* .how .section-title,
 .how .header h1,
 .how .header p {
   opacity: 0;
   transform: translateY(40px);
-}
+} */
 
 /* SectionTitle - animate entire component at once */
 .how .section-title * {
@@ -29,20 +27,20 @@
   animation-delay: 0s;
 }
 
-.how.animate-in .header h1 {
+/* .how.animate-in .header h1 {
   font-size: 3rem;
   font-weight: 600;
   animation: fadeInFromBottomHow 0.8s ease-out forwards;
   animation-delay: 0.3s;
-}
+} */
 
-.how.animate-in .header p {
+/* .how.animate-in .header p {
   font-size: 1.2rem;
   color: rgb(184, 184, 184);
   margin-bottom: 4rem;
   animation: fadeInFromBottomHow 0.8s ease-out forwards;
   animation-delay: 0.6s;
-}
+} */
 
 .how .container {
   margin: 0 auto;

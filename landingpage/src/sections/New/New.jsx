@@ -1,7 +1,7 @@
 import "./New.css";
 function New() {
   return (
-    <div className="new">
+    <div className="new page-section">
       <h1>This is a New Section</h1>
       <h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quibusdam

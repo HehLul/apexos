@@ -17,6 +17,7 @@ h1 {
   font-size: 3.7em;
   line-height: 1.4;
   font-weight: 500;
+  color: white;
 }
 
 h2 {
@@ -39,6 +40,13 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+
+.page-section {
+  padding: 3rem 8rem;
+  background-color: #000000;
+  color: white;
+}
+
 a {
   font-weight: 400;
   color: #000000;

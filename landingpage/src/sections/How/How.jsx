@@ -12,15 +12,15 @@ import number3 from "../../assets/gear.png";
 
 function How() {
   return (
-    <div className="how">
+    <div className="how page-section">
       <SectionTitle title={"How it Works"}></SectionTitle>
       <div className="container">
         <div className="header">
           <h1>The Performance Engineering Framework</h1>
-          <p>
+          <h2>
             Stop optimizing blind. Engineer systematic performance improvements
             through our precision data-driven approach.
-          </p>
+          </h2>
         </div>
         <div className="steps">
           <div className="step">
