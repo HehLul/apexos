@@ -15,16 +15,6 @@
 }
 
 /* Global css for elements */
-a {
-  font-weight: 400;
-  color: #000000;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #6b6b6b;
-}
-
 h1 {
   font-size: 3.7em;
   line-height: 1.4;
@@ -43,10 +33,18 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+a {
+  font-weight: 400;
+  color: #000000;
+  text-decoration: inherit;
+}
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+a:hover {
+  color: #6b6b6b;
+}
+
+p {
+  font-size: 1.1em;
 }
 
 /* Override dark mode preferences completely */

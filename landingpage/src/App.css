@@ -1,20 +1,14 @@
 html {
   scroll-behavior: smooth;
-  /* Force light mode at HTML level */
   color-scheme: light only;
   background-color: #000000;
 }
 
 body {
-  /* Ensure body always has light background */
-  /* background-color: rgb(243, 243, 243) !important; */
   color: #213547 !important;
 }
 
 #root {
-  /* margin: 0 auto; */
-  /* padding: 20px; */
-  /* Ensure root container respects light mode */
   background-color: transparent;
 }
 
