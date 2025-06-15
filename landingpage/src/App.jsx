@@ -85,6 +85,7 @@ function App() {
       <Features></Features>
       {/* <Pricing></Pricing> */}
       {/* <Urgent></Urgent> */}
+      <LastCta></LastCta>
       <Footer></Footer>
     </div>
   );

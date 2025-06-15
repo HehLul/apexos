@@ -8,7 +8,7 @@
 .feature-card > .title {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
 }
 .feature-card > .title > img {
   width: 24px;
@@ -19,9 +19,12 @@
 .feature-card > .title > h2 {
   font-weight: 600;
 }
+.feature-card > .title > h3 {
+  margin: 20px 0;
+}
 
-.feature-card > p {
+/* .feature-card > p {
   margin-top: 0;
   font-size: 1.1rem;
   color: rgb(80, 80, 80);
-}
+} */

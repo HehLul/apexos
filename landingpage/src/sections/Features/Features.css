@@ -3,21 +3,20 @@
   /* background-color: white; */
 }
 
-/* Initial hidden state - header elements start invisible */
-.features .section-title,
+/* .features .section-title,
 .features > .header h1,
 .features > .header p {
   opacity: 0;
   transform: translateY(40px);
 }
 
-/* SectionTitle - animate entire component at once */
+
 .features .section-title * {
   opacity: 1 !important;
   transform: none !important;
 }
 
-/* Animation triggers when .animate-in class is added to features section */
+
 .features.animate-in .section-title {
   animation: fadeInFromTop 0.8s ease-out forwards;
   animation-delay: 0s;
@@ -35,13 +34,13 @@
   color: rgb(80, 80, 80);
   animation: fadeInFromBottom 0.8s ease-out forwards;
   animation-delay: 0.6s;
-}
+} */
 
 .features > .feature-cards {
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 80px;
   width: 100%;
 }
 

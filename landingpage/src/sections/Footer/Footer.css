@@ -2,14 +2,15 @@
   /* background-color: #000000; */
   color: #9ca3af;
   padding: 4rem 6rem 2rem 6rem;
-  border-radius: 20px;
-  background: radial-gradient(
+  background-color: black;
+  /* border-radius: 20px; */
+  /* background: radial-gradient(
     ellipse at center top,
     rgba(70, 70, 70, 1) 0%,
     rgba(30, 30, 30, 1) 25%,
     rgba(20, 20, 20, 1) 50%,
     rgba(0, 0, 0, 1) 100%
-  );
+  ); */
 }
 
 .footer .header {
@@ -115,7 +116,7 @@
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 2rem 1.5rem 2rem;
-    background-color: #1a1a1a;
+    /* background-color: #1a1a1a; */
   }
 
   .footer .header {
@@ -138,7 +139,6 @@
 @media (max-width: 480px) {
   .footer {
     padding: 1.5rem 1rem 1rem 1rem;
-    background: #1a1a1a !important; /* Use !important to force override */
   }
 
   .footer .header .logo h4 {

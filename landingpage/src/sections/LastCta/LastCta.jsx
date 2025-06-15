@@ -3,16 +3,13 @@ import "./LastCta.css";
 function LastCta() {
   return (
     <div className="last-cta">
-      <div className="content">
+      <div className="content page-section">
         <h1>Stop Leaving Potential on the Table</h1>
-        <p>
+        <h2>
           Join the high performers who've chosen systematic optimization over
           guesswork. Lock in lifetime access at the lowest price ever.
-        </p>
-        <div className="buttons">
-          <button className="primary">Get Started</button>
-          <button className="secondary">Join Waitlist</button>
-        </div>
+        </h2>
+        <button className="cta">Join Waitlist</button>
       </div>
     </div>
   );

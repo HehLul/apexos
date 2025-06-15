@@ -4,10 +4,10 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import FeatureCard from "./FeatureCard/FeatureCard";
 
 //images and icons
-import charticon from "../../assets/charticon2.png";
-import timeicon from "../../assets/timeicon2.png";
-import notificon from "../../assets/notificon.png";
-import bolticon from "../../assets/bolticon.png";
+import charticon from "../../assets/piechartwhite.png";
+import timeicon from "../../assets/timewhite.png";
+import notificon from "../../assets/notifwhite.png";
+import bolticon from "../../assets/boltwhite.png";
 
 function Features() {
   return (

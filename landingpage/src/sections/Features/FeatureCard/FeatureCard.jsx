@@ -6,7 +6,7 @@ function FeatureCard({ img, icon, title, desc }) {
       <img src={dummypic} alt="" />
       <div className="title">
         <img src={icon} alt="" />
-        <h2>{title}</h2>
+        <h3>{title}</h3>
       </div>
 
       <p>{desc}</p>
