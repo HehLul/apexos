@@ -9,17 +9,17 @@ import thinking_icon from "../../assets/loop.png";
 
 function Problem() {
   return (
-    <div className="problem">
-      <SectionTitle title={"Problem"}></SectionTitle>
-      <div className="header">
+    <div className="problem page-section">
+      {/* <SectionTitle title={"Problem"}></SectionTitle> */}
+      <div className="section-header">
         <h1>What's Really Holding You Back</h1>
-        <p>The gap between your current self and unlocking your potential</p>
+        <h2>The gap between your current self and unlocking your potential</h2>
       </div>
 
       <div className="problem-cards">
         {/* Row 1 - Top row with left/right animation */}
         <div className="problem-row-1">
-          <div className="problem-card">
+          <div className="problem-card text-container">
             <img className="icon" src={fireicon} alt="" />
             <p>
               You set high ambitions and create systems to reach your goals. But
@@ -79,8 +79,8 @@ function Problem() {
           You're stuck not because you lack drive, but because you lack data.
         </p>
         <p>
-          What if there was an OS that meticulously tracked all your data and
-          systematically engineered your life?
+          What if there was a platform, an OS, that tracked all your hourly data
+          and engineered your everyday life?
         </p>
       </div>
     </div>

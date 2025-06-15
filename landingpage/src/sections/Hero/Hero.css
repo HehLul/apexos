@@ -54,7 +54,6 @@
 
 .hero > .buttons button:first-child:hover {
   background-color: rgba(255, 255, 255, 0.9);
-  transform: translateY(-2px);
 }
 
 .hero > .buttons button:last-child {

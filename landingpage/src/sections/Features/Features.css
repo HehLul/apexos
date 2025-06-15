@@ -1,8 +1,6 @@
 /* Base Features Section Styles */
 .features {
-  padding: 6rem 6rem;
-  border-radius: 20px;
-  background-color: white;
+  /* background-color: white; */
 }
 
 /* Initial hidden state - header elements start invisible */

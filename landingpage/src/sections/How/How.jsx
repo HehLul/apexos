@@ -13,7 +13,7 @@ import number3 from "../../assets/gear.png";
 function How() {
   return (
     <div className="how page-section">
-      <SectionTitle title={"How it Works"}></SectionTitle>
+      {/* <SectionTitle title={"How it Works"}></SectionTitle> */}
       <div className="container">
         <div className="header">
           <h1>The Performance Engineering Framework</h1>

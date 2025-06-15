@@ -46,8 +46,8 @@ function Navbar() {
 
       {/* Desktop Buttons */}
       <div className="buttons desktop-buttons">
-        <button className="btn-secondary">Join Waitlist</button>
-        <button className="btn-primary">Get Started</button>
+        <button className="btn-primary">Join Waitlist</button>
+        {/* <button className="btn-primary">Get Started</button> */}
       </div>
 
       {/* Mobile Menu Toggle */}
@@ -106,9 +106,9 @@ function Navbar() {
           <button className="btn-secondary" onClick={closeMenu}>
             Join Waitlist
           </button>
-          <button className="btn-primary" onClick={closeMenu}>
+          {/* <button className="btn-primary" onClick={closeMenu}>
             Get Started
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

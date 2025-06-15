@@ -11,14 +11,13 @@ import bolticon from "../../assets/bolticon.png";
 
 function Features() {
   return (
-    <div className="features">
-      <div className="header">
-        <SectionTitle icon={""} title={"Features"}></SectionTitle>
+    <div className="features page-section">
+      <div className="header section-header">
         <h1>Stop Guessing and Start Engineering</h1>
-        <p>
+        <h2>
           Get the systematic tracking tools you need to objectively identify
           bottlenecks and optimize every hour of your day
-        </p>
+        </h2>
       </div>
       <div className="feature-cards">
         {/* Row 1 - using proper grid row wrapper */}

@@ -80,11 +80,11 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <How></How>
-      <New></New>
-      {/* <Problem></Problem>
+      {/* <New></New> */}
+      <Problem></Problem>
       <Features></Features>
-      <Pricing></Pricing>
-      <Urgent></Urgent> */}
+      {/* <Pricing></Pricing> */}
+      {/* <Urgent></Urgent> */}
       <Footer></Footer>
     </div>
   );
