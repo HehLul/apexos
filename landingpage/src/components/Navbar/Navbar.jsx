@@ -30,10 +30,16 @@ function Navbar() {
     };
   }, [isMenuOpen]);
 
-  //For form component
+  // For form component
   const [isFormOpen, setIsFormOpen] = useState(false);
   const openForm = () => setIsFormOpen(true);
   const closeForm = () => setIsFormOpen(false);
+
+  // Handle mobile join waitlist - close menu and open form
+  const handleMobileJoinWaitlist = () => {
+    closeMenu();
+    openForm();
+  };
 
   return (
     <>
@@ -52,11 +58,9 @@ function Navbar() {
 
         {/* Desktop Buttons */}
         <div className="buttons desktop-buttons">
-          {/* <button className="btn-primary">Join Waitlist</button> */}
           <button className="btn-primary" onClick={openForm}>
             Join Waitlist
           </button>
-          {/* <button className="btn-primary">Get Started</button> */}
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -90,34 +94,26 @@ function Navbar() {
 
           <ul className="mobile-nav">
             <li>
-              <a href="#vision" onClick={closeMenu}>
-                Vision
+              <a href="#problem" onClick={closeMenu}>
+                Problem
               </a>
             </li>
             <li>
-              <a href="#product" onClick={closeMenu}>
-                Product
+              <a href="#solution" onClick={closeMenu}>
+                Solution
               </a>
             </li>
             <li>
-              <a href="#pricing" onClick={closeMenu}>
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a href="#portal" onClick={closeMenu}>
-                aOS Portal
+              <a href="#features" onClick={closeMenu}>
+                Features
               </a>
             </li>
           </ul>
 
           <div className="mobile-buttons">
-            <button className="btn-secondary" onClick={closeMenu}>
+            <button className="btn-primary" onClick={handleMobileJoinWaitlist}>
               Join Waitlist
             </button>
-            {/* <button className="btn-primary" onClick={closeMenu}>
-            Get Started
-          </button> */}
           </div>
         </div>
       </div>

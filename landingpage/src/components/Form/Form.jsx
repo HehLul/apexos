@@ -10,21 +10,33 @@ function Form({ isOpen, onClose }) {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call - replace with your actual waitlist service
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate delay
+      const formData = new FormData();
+      formData.append("access_key", "e3b650a3-08c9-4d93-8e18-7fbfee740f1f");
+      formData.append("email", email);
+      formData.append("subject", "New ApexxOS Waitlist Signup");
+      formData.append("from_name", "ApexxOS Waitlist");
 
-      // Replace this with your actual API call
-      console.log("Email submitted:", email);
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
-      setIsSubmitted(true);
-      setEmail("");
+      const data = await response.json();
 
-      // Close modal after 2 seconds
-      setTimeout(() => {
-        setIsSubmitted(false);
-        onClose();
-      }, 2000);
+      if (data.success) {
+        setIsSubmitted(true);
+        setEmail("");
+
+        // Close modal after 2 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+          onClose();
+        }, 2000);
+      } else {
+        console.log("Error", data);
+        // You could add error state handling here if needed
+      }
     } catch (error) {
       console.error("Error submitting email:", error);
     } finally {
@@ -78,7 +90,7 @@ function Form({ isOpen, onClose }) {
               </button>
             </form>
 
-            <p className="form-note">No spam. Unsubscribe at any time.</p>
+            <p className="form-note">No spam, ever. Unsubscribe at any time.</p>
           </>
         ) : (
           <div className="success-message">
