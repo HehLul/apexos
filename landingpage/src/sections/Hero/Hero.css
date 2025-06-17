@@ -11,7 +11,7 @@
 
 .hero > img {
   margin-top: 3rem;
-  width: 80vw;
+  max-height: 700px;
 }
 
 .hero > .text {
