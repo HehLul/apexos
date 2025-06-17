@@ -1,3 +1,4 @@
+/* Base LastCta Styles */
 .last-cta {
   text-align: center;
 }
@@ -7,86 +8,132 @@
   margin: 0 auto;
 }
 
-.last-cta .cta{
+.last-cta .cta {
   margin-top: 1.5rem;
   padding: 1rem 3rem;
   font-size: 1.2rem;
-}
-
-
-
-/* .last-cta h1 {
-  font-size: 3.5rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-} */
-
-/* .last-cta p {
-  font-size: 1.2rem;
-  font-weight: 300;
-  margin-bottom: 3rem;
-  line-height: 1.6;
-  opacity: 0.9;
-} */
-
-/* .last-cta .buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-} */
-
-/* .last-cta button {
-  padding: 1rem 2.5rem;
-  border-radius: 12px;
-  font-weight: 500;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: none;
-} */
-
-/* .last-cta .primary {
   background-color: white;
   color: black;
+  border: none;
+  transition: all 0.3s ease;
 }
 
-.last-cta .primary:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.last-cta .secondary {
-  background-color: transparent;
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.last-cta .secondary:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.5);
+.last-cta .cta:hover {
+  background-color: #f5f5f5;
   transform: translateY(-2px);
 }
 
-/* Responsive design */
+/* Large Desktop */
+@media (max-width: 1200px) {
+  .last-cta .content {
+    max-width: 600px;
+  }
+
+  .last-cta h1 {
+    font-size: 3.4rem;
+  }
+
+  .last-cta h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .last-cta .content {
+    max-width: 550px;
+  }
+
+  .last-cta h1 {
+    font-size: 3.2rem;
+    line-height: 1.3;
+  }
+
+  .last-cta h2 {
+    font-size: 1.2rem;
+    margin: 1.25rem 0;
+  }
+
+  .last-cta .cta {
+    padding: 0.9rem 2.5rem;
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
-  .last-cta {
-    padding: 4rem 2rem;
+  .last-cta .content {
+    max-width: none;
+    padding: 2.5rem 2rem;
   }
 
   .last-cta h1 {
     font-size: 2.5rem;
+    line-height: 1.25;
   }
 
-  .last-cta .buttons {
-    flex-direction: column;
-    align-items: center;
+  .last-cta h2 {
+    font-size: 1.1rem;
+    margin: 1.25rem 0;
+    line-height: 1.4;
   }
 
-  .last-cta button {
+  .last-cta .cta {
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
+    margin-top: 2rem;
+    padding: 0.875rem 2rem;
+    font-size: 1.1rem;
   }
-} */
+
+  /* Remove hover effects on mobile */
+  .last-cta .cta:hover {
+    transform: translateY(0);
+    background-color: white;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .last-cta .content {
+    padding: 2rem 1.5rem;
+  }
+
+  .last-cta h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .last-cta h2 {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .last-cta .cta {
+    max-width: 280px;
+    padding: 0.8rem 1.75rem;
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+  .last-cta .content {
+    padding: 1.5rem 1rem;
+  }
+
+  .last-cta h1 {
+    font-size: 1.75rem;
+  }
+
+  .last-cta h2 {
+    font-size: 0.95rem;
+    margin: 0.875rem 0;
+  }
+
+  .last-cta .cta {
+    max-width: 250px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
