@@ -37,11 +37,13 @@ function Navbar() {
 
       {/* Desktop Navigation */}
       <ul className="desktop-nav">
-        <a href="#vision">Vision</a>
+        {/* <a href="#vision">Vision</a>
         <a href="#product">Product</a>
         <a href="#pricing">Pricing</a>
-
-        <a href="#portal">aOS Portal</a>
+        <a href="#portal">aOS Portal</a> */}
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#features">Features</a>
       </ul>
 
       {/* Desktop Buttons */}

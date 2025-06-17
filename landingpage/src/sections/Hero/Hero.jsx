@@ -3,6 +3,12 @@ import "./Hero.css";
 import mockup from "../../assets/dummy_mockup.png";
 
 function Hero() {
+  const scrollToNextSection = () => {
+    document.getElementById("problem").scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="hero">
       <div className="text">
@@ -22,7 +28,7 @@ function Hero() {
 
       <div className="buttons">
         <button>Join Waitlist</button>
-        <button>Learn More</button>
+        <button onClick={scrollToNextSection}>Learn More</button>
       </div>
       <img src={mockup} alt="" />
     </div>

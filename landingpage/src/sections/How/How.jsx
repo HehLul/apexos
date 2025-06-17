@@ -12,7 +12,7 @@ import number3 from "../../assets/gear.png";
 
 function How() {
   return (
-    <div className="how page-section">
+    <div className="how page-section" id="solution">
       {/* <SectionTitle title={"How it Works"}></SectionTitle> */}
       <div className="container">
         <div className="header">

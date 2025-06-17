@@ -11,7 +11,7 @@ import bolticon from "../../assets/boltwhite.png";
 
 function Features() {
   return (
-    <div className="features page-section">
+    <div className="features page-section" id="features">
       <div className="header section-header">
         <h1>Stop Guessing and Start Engineering</h1>
         <h2>

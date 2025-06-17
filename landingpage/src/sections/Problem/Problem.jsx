@@ -9,7 +9,7 @@ import thinking_icon from "../../assets/loop.png";
 
 function Problem() {
   return (
-    <div className="problem page-section">
+    <div className="problem page-section" id="problem">
       {/* <SectionTitle title={"Problem"}></SectionTitle> */}
       <div className="section-header">
         <h1>What's Really Holding You Back</h1>

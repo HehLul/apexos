@@ -79,9 +79,9 @@ function App() {
     <div className="app-container">
       <Navbar></Navbar>
       <Hero></Hero>
-      <How></How>
       {/* <New></New> */}
       <Problem></Problem>
+      <How></How>
       <Features></Features>
       {/* <Pricing></Pricing> */}
       {/* <Urgent></Urgent> */}
