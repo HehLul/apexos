@@ -79,8 +79,8 @@ function Problem() {
           You're stuck not because you lack drive, but because you lack data.
         </p>
         <p>
-          What if there was a platform, an OS, that tracked all your hourly data
-          and engineered your everyday life?
+          What if there was a platform, an OS, that tracked all hourly data and
+          engineered your everyday life?
         </p>
       </div>
     </div>

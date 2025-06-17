@@ -3,7 +3,7 @@ import "./Hero.css";
 import { useState } from "react";
 import Form from "../../components/Form/Form";
 
-import mockup from "../../assets/iosmockups.png";
+import mockup from "../../assets/apexxos_ai_mockup_2.png";
 
 function Hero() {
   const scrollToNextSection = () => {
