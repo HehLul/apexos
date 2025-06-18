@@ -148,6 +148,20 @@ a:hover {
   color: black !important;
 }
 
+/* Fix specific buttons that should be white */
+.btn-primary,
+.hero .buttons button:first-child,
+.urgent-cta,
+.last-cta .cta {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Fix hamburger menu icon - should be white */
+.mobile-menu-toggle span {
+  background-color: white !important;
+}
+
 /* Override ANY system preferences */
 @media (prefers-color-scheme: dark) {
   html {
