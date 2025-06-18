@@ -42,13 +42,7 @@
   border-radius: 16px;
   padding: 2rem;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: rgba(255, 255, 255, 0.05);
-}
-
-.problem-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
 }
 
 .problem-card .icon {
@@ -224,12 +218,6 @@
 
   .closing-hook p {
     font-size: 1.1rem;
-  }
-
-  /* Remove hover effects on mobile */
-  .problem-card:hover {
-    transform: translateY(0);
-    box-shadow: none;
   }
 }
 
