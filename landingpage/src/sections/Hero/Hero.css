@@ -10,7 +10,7 @@
 }
 
 .hero > img {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   max-width: 90vw;
   height: auto;
   display: block;
@@ -79,7 +79,7 @@
 
   .hero > img {
     max-width: 85vw;
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
   }
 
   .hero > .text {
@@ -107,8 +107,8 @@
 
   .hero > img {
     max-width: 95vw;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    /* margin-top: 2rem; */
+    /* margin-bottom: 2rem; */
   }
 
   .hero > .text {
@@ -152,8 +152,8 @@
 
   .hero > img {
     max-width: 98vw;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    /* margin-top: 1.5rem; */
+    /* margin-bottom: 1.5rem; */
   }
 
   .hero > .text {
@@ -193,8 +193,8 @@
 
   .hero > img {
     max-width: 100vw;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    /* margin-top: 1rem; */
+    /* margin-bottom: 1rem; */
   }
 
   .hero > .text h1 {
