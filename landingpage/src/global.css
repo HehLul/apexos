@@ -1,15 +1,31 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  color-scheme: light only;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: crosshair;
 }
-* {
-  color-scheme: light only;
+
+/* Force everything to be black background */
+html {
+  background-color: #000000 !important;
+}
+
+body {
+  background-color: #000000 !important;
+  color: white !important;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background-color: #000000 !important;
+}
+
+.app-container {
+  background-color: #000000 !important;
 }
 
 /* Global css for elements */
@@ -17,7 +33,7 @@ h1 {
   font-size: 3.7em;
   line-height: 1.4;
   font-weight: 500;
-  color: white;
+  color: white !important;
 }
 
 h2 {
@@ -25,18 +41,19 @@ h2 {
   margin: 1.5rem 0;
   opacity: 0.9;
   font-weight: 300;
-  color: white;
+  color: white !important;
 }
+
 h3 {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
-  color: white;
+  color: white !important;
 }
 
 p {
   font-size: 1.1rem;
-  color: rgb(180, 180, 180);
+  color: rgb(180, 180, 180) !important;
   line-height: 1.6;
   margin: 0;
 }
@@ -44,6 +61,7 @@ p {
 .buttons {
   gap: 1rem;
 }
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -56,50 +74,123 @@ button {
 
 .page-section {
   padding: 3rem 8rem;
-  background-color: #000000;
-  color: white;
+  background-color: #000000 !important;
+  color: white !important;
 }
+
 .text-container {
   border: 2px solid rgb(225, 225, 225, 0.3);
   border-radius: 16px;
   padding: 2rem;
   text-align: left;
+  background-color: #000000 !important;
 }
+
 .section-header {
   margin-bottom: 4rem;
 }
+
 a {
   font-size: 1rem;
   font-weight: 600;
-  color: rgb(180, 180, 180);
+  color: rgb(180, 180, 180) !important;
   text-decoration: none;
 }
+
 a:hover {
-  color: #6b6b6b;
+  color: #6b6b6b !important;
 }
 
-p {
-  font-size: 1.1em;
+/* Force all sections to be black */
+.hero,
+.how,
+.problem,
+.features,
+.pricing,
+.urgent,
+.last-cta,
+.navbar,
+.footer {
+  background-color: #000000 !important;
+  color: white !important;
 }
 
-/* Override dark mode preferences completely */
+/* Force all text elements to be white/light */
+.hero *,
+.how *,
+.problem *,
+.features *,
+.pricing *,
+.urgent *,
+.last-cta *,
+.navbar * {
+  color: white !important;
+}
+
+/* Specific overrides for paragraph text */
+.hero p,
+.how p,
+.problem p,
+.features p,
+.pricing p,
+.urgent p,
+.last-cta p {
+  color: rgb(180, 180, 180) !important;
+}
+
+/* Mobile menu - keep white for visibility */
+.mobile-menu {
+  background-color: white !important;
+  color: black !important;
+}
+
+.mobile-menu * {
+  color: black !important;
+}
+
+/* Override ANY system preferences */
 @media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: light only !important;
-    color: #213547 !important;
-    background-color: rgb(243, 243, 243) !important;
-  }
-
-  * {
-    color-scheme: light only !important;
+  html {
+    background-color: #000000 !important;
   }
 
   body {
-    background-color: rgb(243, 243, 243) !important;
-    color: #213547 !important;
+    background-color: #000000 !important;
+    color: white !important;
   }
 
-  a:hover {
-    color: #6b6b6b !important;
+  #root {
+    background-color: #000000 !important;
+  }
+
+  .app-container {
+    background-color: #000000 !important;
+  }
+
+  * {
+    background-color: inherit !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: #000000 !important;
+  }
+
+  body {
+    background-color: #000000 !important;
+    color: white !important;
+  }
+
+  #root {
+    background-color: #000000 !important;
+  }
+
+  .app-container {
+    background-color: #000000 !important;
+  }
+
+  * {
+    background-color: inherit !important;
   }
 }
