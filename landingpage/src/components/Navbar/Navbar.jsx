@@ -16,6 +16,14 @@ function Navbar() {
     setIsMenuOpen(false);
   };
 
+  // Scroll to top when logo is clicked
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   // Prevent body scroll when menu is open
   useEffect(() => {
     if (isMenuOpen) {
@@ -44,7 +52,7 @@ function Navbar() {
   return (
     <>
       <div className="navbar">
-        <div className="logo">
+        <div className="logo" onClick={scrollToTop}>
           <img src="../apexos_logo.png" alt="ApexxOS Logo" />
           <h3>ApexxOS</h3>
         </div>
