@@ -7,7 +7,12 @@ import mockup from "../../assets/apexxos_ai_mockup_2.png";
 
 function Hero() {
   const scrollToNextSection = () => {
-    document.getElementById("problem").scrollIntoView({
+    const element = document.getElementById("problem");
+    const elementPosition = element.offsetTop;
+    const offsetPosition = elementPosition - 80; // Adjust 80px for navbar height
+
+    window.scrollTo({
+      top: offsetPosition,
       behavior: "smooth",
     });
   };
