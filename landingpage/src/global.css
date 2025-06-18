@@ -232,3 +232,14 @@ select:focus {
     background-color: inherit !important;
   }
 }
+
+/* MOBILE GLOBAL STYLES */
+/* Mobile Styles */
+@media (max-width: 768px) {
+  h1 {
+    /* font-size: 2.5em !important; */
+    line-height: 1.4;
+    font-weight: 500;
+    color: white !important;
+  }
+}

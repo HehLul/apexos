@@ -12,7 +12,7 @@
 
 /* Override global h1 size for Problem section to match other sections */
 .problem .section-header h1 {
-  font-size: 3rem !important;
+  /* font-size: 3rem !important; */
   font-weight: 600;
   margin-bottom: 2rem;
 }
@@ -119,7 +119,7 @@
   }
 
   .problem .section-header h2 {
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
   }
 }
 
@@ -139,7 +139,7 @@
   }
 
   .problem .section-header h2 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 
   .problem-cards {
@@ -174,14 +174,14 @@
   }
 
   .problem .section-header h1 {
-    font-size: 2.2rem !important;
+    /* font-size: 2.2rem !important; */
     margin-bottom: 1.5rem;
     line-height: 1.3;
   }
 
   .problem .section-header h2 {
-    font-size: 1.1rem;
-    line-height: 1.5;
+    /* font-size: 1.1rem; */
+    /* line-height: 1.5; */
   }
 
   .problem-cards {
@@ -252,7 +252,7 @@
   }
 
   .problem .section-header h2 {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   .problem-cards {
@@ -311,13 +311,13 @@
     margin-bottom: 1.5rem;
   }
 
-  .problem .section-header h1 {
+  /* .problem .section-header h1 {
     font-size: 1.6rem !important;
     margin-bottom: 1rem;
-  }
+  } */
 
   .problem .section-header h2 {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
   }
 
   .problem-cards {
