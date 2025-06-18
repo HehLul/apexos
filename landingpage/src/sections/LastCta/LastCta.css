@@ -95,6 +95,9 @@
 
 /* Small Mobile Styles */
 @media (max-width: 480px) {
+  .last-cta {
+    margin: 5.5rem 0;
+  }
   .last-cta .content {
     padding: 2rem 1.5rem;
   }
