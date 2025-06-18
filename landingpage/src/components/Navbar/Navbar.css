@@ -212,6 +212,7 @@ body.mobile-menu-open {
   flex-direction: column;
   gap: 1rem;
   border-top: 1px solid #eee;
+  /* background-color: #000; */
 }
 
 .mobile-buttons .btn-secondary,
@@ -219,6 +220,7 @@ body.mobile-menu-open {
   width: 100%;
   padding: 0.75rem 1rem;
   font-size: 1rem;
+  background-color: #000;
 }
 
 /* Tablet Styles */
@@ -235,7 +237,8 @@ body.mobile-menu-open {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .navbar {
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
+    justify-content: space-between;
   }
 
   .navbar > .logo > h3 {
@@ -266,7 +269,7 @@ body.mobile-menu-open {
 /* Small Mobile Styles */
 @media (max-width: 480px) {
   .navbar {
-    padding: 0.5rem 0.75rem;
+    padding: 0.75rem 1.5rem;
   }
 
   .navbar > .logo > h3 {
@@ -292,5 +295,6 @@ body.mobile-menu-open {
 
   .mobile-buttons {
     padding: 1rem;
+    background-color: #000;
   }
 }

@@ -90,7 +90,7 @@ function Form({ isOpen, onClose }) {
               </button>
             </form>
 
-            <p className="form-note">No spam, ever. Unsubscribe at any time.</p>
+            <p className="form-note">No spam. Unsubscribe at any time.</p>
           </>
         ) : (
           <div className="success-message">

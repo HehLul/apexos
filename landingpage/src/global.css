@@ -152,7 +152,10 @@ a:hover {
 .btn-primary,
 .hero .buttons button:first-child,
 .urgent-cta,
-.last-cta .cta {
+.last-cta .cta,
+form button,
+.form button,
+button[type="submit"] {
   background-color: white !important;
   color: black !important;
 }
@@ -160,6 +163,27 @@ a:hover {
 /* Fix hamburger menu icon - should be white */
 .mobile-menu-toggle span {
   background-color: white !important;
+}
+
+/* Fix form inputs - white text on dark background */
+input,
+textarea,
+select {
+  background-color: #333333 !important;
+  color: white !important;
+  border: 1px solid rgb(225, 225, 225, 0.3) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(180, 180, 180) !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid white !important;
+  background-color: #444444 !important;
 }
 
 /* Override ANY system preferences */
